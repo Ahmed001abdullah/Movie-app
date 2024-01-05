@@ -389,3 +389,35 @@ nav {
     font-size: calc(18 / 16 * 1rem);
   }
 }
+/* ... (your existing code) ... */
+
+.load-more-btn {
+  margin: 20px auto;
+  padding: 15px 30px; /* Increased padding for a larger button */
+  background-color: #e93f3f; /* Red color */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 0.5s ease;
+  display: block; /* Ensures the button takes full width */
+}
+
+.load-more-btn:hover {
+  background-color: #c72c2c; /* Darker red on hover */
+}
+
+.load-more-btn.loading {
+  background-color: #d9534f; /* Change color when in loading state */
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
